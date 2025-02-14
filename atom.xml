@@ -6,7 +6,7 @@
   <link href="https://qiride.github.io/atom.xml" rel="self"/>
   
   <link href="https://qiride.github.io/"/>
-  <updated>2025-02-13T08:07:59.995Z</updated>
+  <updated>2025-02-14T07:07:37.175Z</updated>
   <id>https://qiride.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于前端的知识二</title>
+    <link href="https://qiride.github.io/post/d2407e80.html"/>
+    <id>https://qiride.github.io/post/d2407e80.html</id>
+    <published>2025-02-14T05:42:36.000Z</published>
+    <updated>2025-02-14T07:07:37.175Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h1 id="关于前端的知识二"><a href="#关于前端的知识二" class="headerlink" title="关于前端的知识二"></a>关于前端的知识二</h1><h2 id="1-编程语言"><a href="#1-编程语言" class="headerlink" title="1. 编程语言"></a>1. 编程语言</h2><h3 id="1-1-JavaScript和ECMAScript规范"><a href="#1-1-JavaScript和ECMAScript规范" class="headerlink" title="1.1 JavaScript和ECMAScript规范"></a>1.1 JavaScript和ECMAScript规范</h3><p>ECMAScript 6或者说是ECMAScript 2015,他是一套文档,规范了脚本语言的设计包括语法,数据类型,内置对象等等</p><p>JavaScript则是遵循这套规范的编程语言之一,ES规范确保了无论在何处使用JS,它的写法和行为都是一致的,ES每年都在引入新特性从ES2015的let/const,箭头函数到ES2024的Object.groupBy等等,借助现代工具链的转义和polyfills的等效实现,我们可以在不支持这种新特性的环境下使用它们</p><h3 id="1-2-TypeScript"><a href="#1-2-TypeScript" class="headerlink" title="1.2 TypeScript"></a>1.2 TypeScript</h3><p>TypeScript是JavaScript的超集,它在JavaScript的基础上添加了静态类型检查,这使得代码更加健壮,易于维护,同时也可以在编译阶段发现一些错误,使得许多错误常见错误在编译阶段就会暴露出来</p><h3 id="1-3-Rust"><a href="#1-3-Rust" class="headerlink" title="1.3 Rust"></a>1.3 Rust</h3><p>近些年Rust在前端发展十分迅猛,正在逐步占领前端工具链,举个栗子,对标Babel的SWC,对标Webpack的Espace,Farm,Next.js的Turbopack都是基于Rust语言编写的,出现这种情况的最根本原因是前端项目的体谅越来越大,构建性能已经成为瓶颈,传统的打包优化方案已经无法进一步提高性能,所以需要借助性能更强的编程语言</p><h3 id="1-4-WebAssembly"><a href="#1-4-WebAssembly" class="headerlink" title="1.4 WebAssembly"></a>1.4 WebAssembly</h3><p>WebAssembly简称Wasm最早用于浏览器计算密集型任务,而到了现在它已然成为一套完整的应用运行生态,通常是通过系统语言C/C++/Go和Rust的编译目标之一,Wasm Runtime的出现使得其能够以在非浏览器的环境下运行,WASI API又为Wasm提供了访问系统的能力,比如文件系统和网络等,Wasm除了满足重度计算需求外,还应用于跨平台开发,安全沙箱,容器和虚拟化技术</p><h3 id="1-5-领域特定语言"><a href="#1-5-领域特定语言" class="headerlink" title="1.5 领域特定语言"></a>1.5 领域特定语言</h3><p>领域特定语言(DSL),它通常是在某个现有语言基础上增加一定约束和拓展,应用于某个特定场景,如微信小程序中的WXML,和在React中使用的JSX,Vue中的template,这些都统称为领域特定语言,领域特定语言并不是通用型语言,但是相对于通用性语言来说,它的语法更简单,开发效率更高,专业对口业务,可维护性强</p><h3 id="1-6-JavaScript引擎和运行时"><a href="#1-6-JavaScript引擎和运行时" class="headerlink" title="1.6 JavaScript引擎和运行时"></a>1.6 JavaScript引擎和运行时</h3><p>写的代码要运行当然离不开,JS引擎和JS运行时,JS引擎负责解释和执行JS代码,而JS运行时不仅自带了一个JS引擎,还提供了一些内置对象和API,如DOM,Web API,Node.js API等,项目容易出现浏览器兼容问题多半都是使用的JS运行时不同导致的,如Chrome浏览器提供了基于V8引擎的运行时,而Safari浏览器提供了基于JavaScriptCore引擎的运行时,虽然都提供了Web API,但在实现上又这细微差异</p><p>Node.js是最常用的JS运行时,但在企业级的大型项目Node.js中,仅仅用它还是不够的,大型Node.js的应用还会考虑性能监控,安全提醒,故障排除,性能优化等问题,如阿里云前端基建团队的Node.js性能平台(alinode)就在Node.js的基础上添加了这些功能,提供了一整套方案</p><h2 id="2-简单又复杂的工具链"><a href="#2-简单又复杂的工具链" class="headerlink" title="2. 简单又复杂的工具链"></a>2. 简单又复杂的工具链</h2><h3 id="2-1-什么是工具链"><a href="#2-1-什么是工具链" class="headerlink" title="2.1 什么是工具链"></a>2.1 什么是工具链</h3><p>工具链通常是指一组用于软件开发的工具和技术,帮助开发者管理好从源代码到最终软件的整个开发过程,对于前端来讲这些工具通常包括集成开发环境(IDE),包管理工具,构建工具,调试工具,持续集成和部署(CI/CD)工具等,大多以VSCode作为IDE,这不是因为它具有良好的开发体验,还得益于强大了插件生态,让一些比较新的语言或开发工具也能方便的集成进来,前端开发中的很多人物都可以在VSCode中的一站式完成,如版本控制Git,管理NPM包和脚本,调试Node.js程序等,另外还有许多于本地VSCode相似的云IDE,如腾讯的Cloud studio,阿里云的Cloud IDE等</p><h3 id="2-2-包管理工具"><a href="#2-2-包管理工具" class="headerlink" title="2.2 包管理工具"></a>2.2 包管理工具</h3><p>包管理是现代软件开发绕不开的话题,自前端开启模块化开发后,以npm为代表的包管理器也应运而生,包管理的核心是代码组织与复用,这也是开发大型项目所必须的要求,现代前端的包管理工具又几个代表npm,yarn,pnpm,他们各有特点</p><ul><li><strong>npm</strong>: 广泛采用,兼容性强,速度较慢</li><li><strong>yarn</strong>: 并行安装+缓存,资源消耗较大</li><li><strong>pnpm</strong>: 共享依赖模型,兼容性问题较多</li></ul><p>如上特点可以看到每一代包管理器都会解决上一代的问题,又快又省是包管理器的核心演进方向,前端有一个数量很大的软件生态,大到一个工具小到一个函数都可以坐成一个包,许多包有直接或间接依赖另一些包,在加上版本不同,因此包管理是一件相当复杂的事,虽然开源包管理工具已经很好的解决了安装速度和资源消耗的问题,但是企业级的包管理还可以做更多事情,比较典型的场景是应对供应链的污染,前端项目的直接供应商是npm仓库,一个带有bug的包发布后会导致本地或持续集成环境产生问题,因此企业级包管理器会在开源包管理器的基础上,增加对bug包的黑名单控制,例如cnpm的bug-versions就是维护了一套黑名单</p><p>前端构建工具的出现比较晚,首先是基于Task Runner 的 Grunt(2010) 和 Gulp(2013)以及模块化打包工具Browserify(2011),Webpack(2012)和Rollup(2015)然后是现代的Parcel(2017),vite(2020),Turbopack(2022)和Rspack(2023)等,现代前端构建工具通常包含代码转译器,优化器,打包器,开发服务器,和插件系统</p><h3 id="2-3-构建工具"><a href="#2-3-构建工具" class="headerlink" title="2.3 构建工具"></a>2.3 构建工具</h3><ul><li><strong>转译器</strong>: 负责将源代码转换为目标平台可以直接运行的代码,同时让一些比较新的语言特性可以兼容旧的环境,如JSX到JS的转换</li><li><strong>优化器</strong>: 优化器是将转译完成的代码进一步优化,如压缩,混淆和分割,以提升传输效率和安全性</li><li><strong>打包器</strong>: 打包器将转译好的代码合并到一起通常内置转译器和优化器从源代码到最终产物一站式完成</li><li><strong>开发服务器</strong>: 开发服务器提供一个本地的http服务器,通过HMR,传输原生ES模块,接口代理等功能来提高开发体验</li><li><strong>插件系统</strong>: 插件系统是功能拓展的主要方式,可以灵活改变整个构建项目的行为,来实现定制化需求</li></ul><p>近些年前端构建工具的大趋势是机制整合以及使用Rust重写核心模块</p><ul><li><strong>极致整合</strong>: 为了减少学习负担</li><li><strong>Rust重写核心模块</strong>: 为了显著提升构建和打包效率</li></ul><h3 id="2-4-调试工具"><a href="#2-4-调试工具" class="headerlink" title="2.4 调试工具"></a>2.4 调试工具</h3><p>现代前端针对不同的场景会用到不同的调试工具,浏览器开发者工具用于普通的HTML界面的UI,网络,性能调试,比如Chrome DevTools,小程序开发者工具用于小程序模拟和真机调试,接口调试工具Postman,Charles等,框架自带的调试工具,如React Developer,Vue Devtools等,它们可以展示更为直观的虚拟DOM结构和组件状态</p><h3 id="2-5-CI-CD工具"><a href="#2-5-CI-CD工具" class="headerlink" title="2.5 CI/CD工具"></a>2.5 CI/CD工具</h3><p>一个健壮和可靠的软件研发流程离不开持续集成(CI)和持续部署(CD),CI/CD在现代前端也是必不可少的,它并不复杂,现在我们可以借助Github Action,Travis CI,Jenkins等工具或平台来轻松完成这些事情</p><h3 id="2-6-为什么简单的的同时复杂"><a href="#2-6-为什么简单的的同时复杂" class="headerlink" title="2.6 为什么简单的的同时复杂"></a>2.6 为什么简单的的同时复杂</h3><ul><li><p><strong>简单</strong>: 因为它对开发这屏蔽了许多内部细节,比如基本都内置了诸如HMO,转译工具,CSS预处理等工具,配合脚手架用起来简单</p></li><li><p><strong>复杂</strong>: 因为它们有的选择兼容Rollup生态(vite),有的选择兼容Webpack(Rspack)生态,有的则另辟蹊径(Turbopack),这导致它们的底层架构大不相同,如开发者需要深度定制,则会面临许多取舍和困难</p></li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;h1 id=&quot;关于前端的知识二&quot;&gt;&lt;a href=&quot;#关于前端的知识二&quot; class=&quot;headerlink&quot; title=&quot;关于前端的知识二&quot;&gt;&lt;/a&gt;关于前端的知识二&lt;/h1&gt;&lt;h2 id=&quot;1-编程语言&quot;&gt;&lt;a href=&quot;#1-编程语言&quot; cl</summary>
+      
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://qiride.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>关于前端的知识一</title>
