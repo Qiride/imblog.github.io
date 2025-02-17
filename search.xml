@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>关于前端的知识三</title>
+      <link href="/post/901ce88d.html"/>
+      <url>/post/901ce88d.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><h1 id="关于前端的知识三"><a href="#关于前端的知识三" class="headerlink" title="关于前端的知识三"></a>关于前端的知识三</h1><h2 id="1-用户界面"><a href="#1-用户界面" class="headerlink" title="1. 用户界面"></a>1. 用户界面</h2><h3 id="1-1-什么是用户界面"><a href="#1-1-什么是用户界面" class="headerlink" title="1.1 什么是用户界面"></a>1.1 什么是用户界面</h3><p>用户界面(UI)全称是User Interface,是人与机器设备交互的必要窗口,有许多种用户界面,我们可以根据它的呈现方式,承载功能来进行划分,如图形用户界面(GUI),命令行界面(CLI),语言用户界面(LUI)以及自然用户界面(NUI),前端的核心任务就是构建用户界面,而如何高效的构建出良好的用户界面则是现代前端要进一步考虑的问题</p><p>传统的前端用户界面通常是指通过使用HTML,CSS,JS三件套制作的网页</p><ul><li><strong>HTML</strong>: 描述网页骨架</li><li><strong>CSS</strong>: 为网页提供好看的样式</li><li><strong>JS</strong>: 为网页添加交互功能\</li></ul><p>相比于过去,现代前端的用户界面已经不仅仅是普普通通的网页,还有跨平台桌面应用,智能手机中的H5,小程序和Native App,甚至是VR中的交互界面,虽然大多是的产品底层还是3件套,但是根据用户场景,用户界面的构建方式会有很大的不同</p><h3 id="1-2-CSS框架"><a href="#1-2-CSS框架" class="headerlink" title="1.2 CSS框架"></a>1.2 CSS框架</h3><p>CSS框架是一种对原生CSS的封装和抽象,Bootstrap是早期最典型的代表,其中内置了一组风格统一的class样式表,开发者只需要在必要的位置填入class名,即可免去写一大堆的CSS属性的工作,现代CSS框架还提出了布局,主题,可访问性,工具h函数,响应式设计等概念,这些概念使得CSS框架的使用更加方便,同时也提高了开发效率</p><p>以Tailwind CSS为代表工具化CSS框架脱颖而出,开发者组合使用其原子化工具类即可实现任何UI设计,这是一种更简单灵活的CSS开发范式,CSS框架简化了传统CSS的编写方式</p><h3 id="1-2-UI框架"><a href="#1-2-UI框架" class="headerlink" title="1.2 UI框架"></a>1.2 UI框架</h3><p>但是距离构建出一个完整的用户界面还差了很多,我们还需要另一种技术,它就是专业对口的UI架构,直接使用HTML,CSS,JS构建用户界面虽然简单直接,但是在开发效率和可维护性方面处于劣势,UI框架可以说是对三件套的高级抽象,通常包含虚拟DOM,数据驱动,组件化,代码编译和工具链配套这几个要素,目的在于让开发者使用更自然的方式构建出高可复用的用户界面,常见的Vue,React和Svelte等都属于UI框架的范畴</p><h3 id="1-3-组件库"><a href="#1-3-组件库" class="headerlink" title="1.3 组件库"></a>1.3 组件库</h3><p>组件库通常依赖于某个特定的UI框架,如依赖于React的Ant Design,依赖于Vue的Element等,也有不依赖UI框架的Headless UI和Radix UI等</p><p>关于组件库的内部组件划分我可以分为</p><ul><li><strong>基础组件</strong>: 诸如Button,Input等每个组件库都会有的样式,称之为基础组件</li><li><strong>模板组件</strong>: 基于基础组件在组合封装一层的功能更复杂的组件</li><li><strong>业务组件</strong>: 基于模板组件添加数据接口和数据处理逻辑的组件</li></ul><p>可以预见每一层抽象都会降低复用性为代价,但抽象带来的手机是开发效率显著提升,具备复用价值的业务组件就是一种最佳实践,是企业最重要的前端资产之一</p><h2 id="2-应用框架"><a href="#2-应用框架" class="headerlink" title="2. 应用框架"></a>2. 应用框架</h2><h3 id="2-1-为什么需要应用框架"><a href="#2-1-为什么需要应用框架" class="headerlink" title="2.1 为什么需要应用框架"></a>2.1 为什么需要应用框架</h3><p>随着前端业务越来越复杂,我们会在UI框架之外做很多看起来与UI无关的事情,如引入状态管理方案,做一套统一的布局,抽象一个更好用的数据请求方法,优化打包效率等等,而这些看起来很通用UI框架做起来又很费劲,正是应用框架会考虑的事情,应用框架的覆盖面较广</p><ul><li><strong>React</strong>: Next.js,UmiJS,Modern.js等开源的框架</li><li><strong>Vue</strong>: Nuxt.js,Quasar等开源的框架</li><li><strong>自成一体</strong>: Astro,Angular等开源的框架</li><li><strong>桌面应用</strong>: Ekectron,Tauri等开源的框架</li><li><strong>小程序</strong>: Taro,Uniapp等开源的框架</li><li><strong>移动原生应用</strong>: React Native,Flutter,lonic等开源的框架</li></ul><p>应用框架基本都包括</p><ul><li><strong>路由(Routing)</strong>: 路由规定了页面的组织方式,布局和跳转方式,也可以帮助框架更好的分包,以提升运行时的加载效率</li><li><strong>样式(Styling)</strong>: 一套CSS开发方案,通常包括CSS预处理器,CSS Modules,CSS-in-JS和CSS框架</li><li><strong>数据获取(Fetching)</strong>: 通常包含内置请求库,缓存,服务端渲染等经过框架优化的方案</li><li><strong>测试(Testing)</strong>: 专为框架定制的一套环境和测试工具,方便开发者更优雅的编写测试代码</li><li><strong>插件(Plugin)</strong>: 为方便开发者扩展框架其功能所预留的口子,通过它可以自定义构建行为,来尽可能满足定制化需求</li><li><strong>部署(Deploying)</strong>: 生产应用上线方案,包含不同构建产物的生成配置,静态资源部署,全栈应用部署方式等</li></ul><h3 id="2-2-企业级应用框架"><a href="#2-2-企业级应用框架" class="headerlink" title="2.2 企业级应用框架"></a>2.2 企业级应用框架</h3><p>应用框架时从小型业务过渡到大型业务的必经之路,许多大厂会在开源应用框架的基础上在做一层定制封装,增加适用于自身业务特点的功能,比如对接内部各种服务的插件,蚂蚁集团内部的Bigfish框架就是在UmisJS的基础上添加了许多Plugins来拓展功能</p><h3 id="2-3-应用架构"><a href="#2-3-应用架构" class="headerlink" title="2.3 应用架构"></a>2.3 应用架构</h3><p>应用架构时应用组织范式,更关注不同范式的优缺点,现代前端常见的应用架构方案又MPA,SPA,PWA,Micro-Frontends和Islands这几种</p><ul><li><strong>MPA</strong>: 传统的多页面应用,每个页面都是一个独立的HTML文件,通过浏览器的前进后退按钮进行页面切换</li><li><strong>SPA</strong>: 单页面应用,所有页面都在同一个HTML文件中,通过JS动态渲染不同的页面内容,通过路由来实现页面切换</li><li><strong>PWA</strong>: 渐进式Web应用,是一种介于传统Web应用和Native应用之间</li><li><strong>Micro-Frontends</strong>: 微前端,是一种将多个独立的前端应用组合在一起的架构模式,每个应用都可以独立开发,独立部署,独立测试,独立维护,通过框架来实现应用之间的通信和协作</li><li><strong>Islands</strong>: 岛架构,是一种将页面拆分成多个独立的组件,每个组件都可以独立开发,独立部署,独立测试,独立维护,通过框架来实现</li></ul><p>用一种应用框架可以支持不同的应用架构,如UmiJS支持SPA,MPA和MFE架构,Quasar支持SPA,PWA,Electron架构,Morden.js支持SPA,MFE架构,Astro子专注于Islands架构等等</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于前端的知识二</title>
       <link href="/post/d2407e80.html"/>
       <url>/post/d2407e80.html</url>
